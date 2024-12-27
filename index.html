@@ -3,6 +3,7 @@
 
     if (phoneNumber) {
         window.location.href = `tel:${phoneNumber}`;
+        window.close();
     } else {
         alert("No number provided");
     }
