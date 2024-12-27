@@ -1,0 +1,11 @@
+<script>
+    function callNumber() {
+        const phoneNumber = new URLSearchParams(window.location.search).get("number");
+
+        if (phoneNumber) {
+            window.location.href = `tel:${phoneNumber}`;
+        } else {
+            document.getElementById("message").innerText = "Keine Telefonnummer angegeben.";
+        }
+    }
+</script>
