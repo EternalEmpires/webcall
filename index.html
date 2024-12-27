@@ -1,11 +1,9 @@
 <script>
-    function callNumber() {
-        const phoneNumber = new URLSearchParams(window.location.search).get("number");
+    const phoneNumber = new URLSearchParams(window.location.search).get("number");
 
-        if (phoneNumber) {
-            window.location.href = `tel:${phoneNumber}`;
-        } else {
-            alert("No number provided");
-        }
+    if (phoneNumber) {
+        window.location.href = `tel:${phoneNumber}`;
+    } else {
+        alert("No number provided");
     }
 </script>
